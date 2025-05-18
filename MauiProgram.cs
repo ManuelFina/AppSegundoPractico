@@ -13,6 +13,7 @@ namespace AppSegundoPractico
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Poppins-Bold.ttf", "PoppinsBold");
                 });
 
 #if DEBUG

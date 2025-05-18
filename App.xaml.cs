@@ -1,4 +1,6 @@
-﻿namespace AppSegundoPractico
+﻿using AppSegundoPractico.Views;
+
+namespace AppSegundoPractico
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new LoginPage();
         }
     }
 }

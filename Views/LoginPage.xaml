@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSegundoPractico.Views.LoginPage"
+             Title="Login"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="CenterAndExpand">
+
+        <!-- Título con ícono -->
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="8">
+            <Image Source="hand.svg"
+                   WidthRequest="24"
+                   HeightRequest="24"
+                   VerticalOptions="Center" />
+            <Label Text="Bienvenido"
+                   FontFamily="PoppinsBold"
+                   FontSize="28"
+                   FontAttributes="None"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <!-- Logo SVG -->
+        <Frame HeightRequest="120"
+               WidthRequest="120"
+               CornerRadius="60"
+               Padding="0"
+               IsClippedToBounds="True"
+               BorderColor="LightGray"
+               HasShadow="False"
+               HorizontalOptions="Center">
+            <Image Source="logo.png"
+                   Aspect="AspectFill"
+                   WidthRequest="120"
+                   HeightRequest="120" />
+        </Frame>
+
+        <!-- Usuario -->
+        <Frame BorderColor="#E0E0E0"
+               BackgroundColor="White"
+               CornerRadius="10"
+               HasShadow="False"
+               Padding="10">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="call.png"
+                       WidthRequest="20"
+                       HeightRequest="20"
+                       VerticalOptions="Center" />
+                <Entry x:Name="UsuarioEntry"
+                       Placeholder="Usuario o correo electrónico"
+                       PlaceholderColor="#9E9E9E"
+                       TextColor="Black"
+                       BackgroundColor="Transparent"
+                       FontSize="14"
+                       FontFamily="PoppinsBold"
+                       HorizontalOptions="FillAndExpand" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!-- Contraseña -->
+        <Frame BorderColor="#E0E0E0"
+               BackgroundColor="White"
+               CornerRadius="10"
+               HasShadow="False"
+               Padding="10">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="password.png"
+                       WidthRequest="20"
+                       HeightRequest="20"
+                       VerticalOptions="Center" />
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Contraseña"
+                       IsPassword="True"
+                       PlaceholderColor="#9E9E9E"
+                       TextColor="Black"
+                       BackgroundColor="Transparent"
+                       FontSize="14"
+                       FontFamily="PoppinsBold"
+                       HorizontalOptions="FillAndExpand" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Iniciar sesión"
+        BackgroundColor="#007BFF"
+        TextColor="White"
+        FontFamily="PoppinsBold"
+        CornerRadius="10"
+        HeightRequest="50"
+        FontSize="16"
+        Clicked="OnLoginClicked" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
