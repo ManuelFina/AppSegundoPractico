@@ -57,13 +57,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\AppIcon\arrowback.svg" />
+	  <MauiImage Include="Resources\AppIcon\call.svg" />
+	  <MauiImage Include="Resources\AppIcon\hand.svg" />
+	  <MauiImage Include="Resources\AppIcon\info.svg" />
+	  <MauiImage Include="Resources\AppIcon\link.svg" />
+	  <MauiImage Include="Resources\AppIcon\location.svg" />
+	  <MauiImage Include="Resources\AppIcon\login.svg" />
+	  <MauiImage Include="Resources\AppIcon\logout.svg" />
+	  <MauiImage Include="Resources\AppIcon\mail.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\AcercaDesarrolladorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MenuAccesoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ServicioOfrecidoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
