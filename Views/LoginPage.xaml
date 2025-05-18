@@ -5,14 +5,14 @@
              Title="Login"
              BackgroundColor="White">
 
-    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="CenterAndExpand">
+    <VerticalStackLayout Padding="30" Spacing="25">
 
-        <!-- Título con ícono -->
+ 
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="8">
-            <Image Source="hand.svg"
+            <Image Source="hand.png"
                    WidthRequest="24"
                    HeightRequest="24"
-                   VerticalOptions="Center" />
+                   VerticalOptions="Center"/>
             <Label Text="Bienvenido"
                    FontFamily="PoppinsBold"
                    FontSize="28"
@@ -21,7 +21,6 @@
                    VerticalOptions="Center" />
         </HorizontalStackLayout>
 
-        <!-- Logo SVG -->
         <Frame HeightRequest="120"
                WidthRequest="120"
                CornerRadius="60"
@@ -36,7 +35,6 @@
                    HeightRequest="120" />
         </Frame>
 
-        <!-- Usuario -->
         <Frame BorderColor="#E0E0E0"
                BackgroundColor="White"
                CornerRadius="10"
@@ -53,12 +51,10 @@
                        TextColor="Black"
                        BackgroundColor="Transparent"
                        FontSize="14"
-                       FontFamily="PoppinsBold"
-                       HorizontalOptions="FillAndExpand" />
+                       FontFamily="PoppinsBold" />
             </HorizontalStackLayout>
         </Frame>
 
-        <!-- Contraseña -->
         <Frame BorderColor="#E0E0E0"
                BackgroundColor="White"
                CornerRadius="10"
@@ -76,8 +72,7 @@
                        TextColor="Black"
                        BackgroundColor="Transparent"
                        FontSize="14"
-                       FontFamily="PoppinsBold"
-                       HorizontalOptions="FillAndExpand" />
+                       FontFamily="PoppinsBold"/>
             </HorizontalStackLayout>
         </Frame>
 
