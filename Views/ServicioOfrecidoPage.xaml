@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSegundoPractico.Views.ServicioOfrecidoPage"
+             Title="Servicio Ofrecido"
+             BackgroundColor="White">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="service_icon.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       VerticalOptions="Center" />
+                <Label Text="Servicio Ofrecido"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Label Text="Ofrecemos servicios de desarrollo personalizado de aplicaciones para empresas y particulares. Nuestras soluciones se adaptan a las necesidades específicas de cada cliente, garantizando máxima calidad, eficiencia y escalabilidad."
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Frame BorderColor="#007AFF" CornerRadius="10" Padding="15">
+                <VerticalStackLayout Spacing="10">
+                    <HorizontalStackLayout>
+                        <Image Source="dotnet_icon.png" WidthRequest="24" />
+                        <Label Text=".NET MAUI multiplataforma" FontSize="16" />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Image Source="xaml_icon.png" WidthRequest="24" />
+                        <Label Text="XAML para interfaces modernas" FontSize="16" />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Image Source="sql_icon.png" WidthRequest="24" />
+                        <Label Text="SQL Server y SQLite para bases de datos" FontSize="16" />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Image Source="vs_icon.png" WidthRequest="24" />
+                        <Label Text="Visual Studio 2022 como entorno de desarrollo" FontSize="16" />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Image Source="figma_icon.png" WidthRequest="24" />
+                        <Label Text="Diseño de prototipos con Figma" FontSize="16" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
