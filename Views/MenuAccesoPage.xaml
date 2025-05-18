@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSegundoPractico.Views.MenuAccesoPage"
+             Title="Menu Principal"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30" VerticalOptions="Center">
+            <Label Text="☰ Menu Principal"
+                   FontSize="24"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" />
+
+            <Frame HasShadow="True" CornerRadius="10" Padding="10" BackgroundColor="#007AFF">
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="service_icon.png" 
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
+                    <Label Text="Servicio Ofrecido" 
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           TextColor="White" />
+                    <Button Text="→"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="OnServicioOfrecidoClicked" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Botón: Acerca del Desarrollador -->
+            <Frame HasShadow="True" CornerRadius="10" Padding="10" BackgroundColor="#007AFF">
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="info_icon.png" 
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
+                    <Label Text="Acerca del Desarrollador" 
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           TextColor="White" />
+                    <Button Text="→"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="OnDatosDesarrolladorClicked"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame HasShadow="True" CornerRadius="10" Padding="10" BackgroundColor="#007AFF">
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="logout_icon.png" 
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
+                    <Label Text="Cerrar Sesión" 
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           TextColor="White" />
+                    <Button Text="→"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="OnCerrarSesionClicked"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
