@@ -5,21 +5,23 @@ public partial class MenuAccesoPage : ContentPage
 	public MenuAccesoPage()
 	{
         InitializeComponent();
-	}
 
-    private async void OnServicioOfrecidoClicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new ServicioOfrecidoPage());
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 
-    private async void OnDatosDesarrolladorClicked(object sender, EventArgs e)
+    private void OnServicioOfrecidoClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new AcercaDesarrolladorPage());
+              Navigation.PushAsync(new ServicioOfrecidoPage());
     }
 
-    private async void OnCerrarSesionClicked(object sender, EventArgs e)
+    private void OnDatosDesarrolladorClicked(object sender, EventArgs e)
     {
-        await Navigation.PopToRootAsync(); // Vuelve al login
+              Navigation.PushAsync(new AcercaDesarrolladorPage());
+    }
+
+    private void OnCerrarSesionClicked(object sender, EventArgs e)
+    {
+              Navigation.PopToRootAsync(); 
     }
 
 }

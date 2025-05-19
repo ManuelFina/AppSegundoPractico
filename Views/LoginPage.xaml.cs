@@ -12,6 +12,8 @@ namespace AppSegundoPractico.Views
         public LoginPage()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
@@ -22,7 +24,7 @@ namespace AppSegundoPractico.Views
                 string password = PasswordEntry.Text;
 
                 if (username == USERNAME && password == PASSWORD)
-                    Application.Current.MainPage = new MenuAccesoPage();
+                    await Navigation.PushAsync(new MenuAccesoPage());
                 
                 else
                     await DisplayAlert("Error", "Usuario o contraseña incorrectos", "OK");
@@ -33,5 +35,13 @@ namespace AppSegundoPractico.Views
                 await DisplayAlert("Error", $"Ocurrió un error: {ex.Message}", "OK");
             }
         }
+
+        private void OnTogglePasswordVisibility(object sender, EventArgs e)
+        {
+            PasswordEntry.IsPassword = !PasswordEntry.IsPassword;
+
+            TogglePasswordButton.Source = PasswordEntry.IsPassword ? "visibilitygrey.png" : "visibilityoffgrey.png";
+        }
+
     }
 }

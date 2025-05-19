@@ -2,55 +2,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppSegundoPractico.Views.ServicioOfrecidoPage"
-             Title="Servicio Ofrecido"
              BackgroundColor="White">
 
+        <VerticalStackLayout Padding="20" Spacing="50">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
-            <HorizontalStackLayout Spacing="10">
-                <Image Source="service_icon.png"
-                       WidthRequest="30"
-                       HeightRequest="30"
-                       VerticalOptions="Center" />
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Image Source="icono_servicio.png" WidthRequest="24" HeightRequest="24"/>
                 <Label Text="Servicio Ofrecido"
-                       FontSize="22"
                        FontAttributes="Bold"
-                       VerticalOptions="Center" />
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
             </HorizontalStackLayout>
 
-            <Label Text="Ofrecemos servicios de desarrollo personalizado de aplicaciones para empresas y particulares. Nuestras soluciones se adaptan a las necesidades específicas de cada cliente, garantizando máxima calidad, eficiencia y escalabilidad."
-                   FontSize="16"
-                   LineBreakMode="WordWrap" />
+            <Label Text="Ofrecemos servicios de desarrollo personalizado de aplicaciones para empresas y particulares. Nuestras soluciones se adaptan a las necesidades específicas de cada cliente, garantizando la máxima calidad, eficiencia y escalabilidad."
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"/>
 
-            <Frame BorderColor="#007AFF" CornerRadius="10" Padding="15">
-                <VerticalStackLayout Spacing="10">
-                    <HorizontalStackLayout>
-                        <Image Source="dotnet_icon.png" WidthRequest="24" />
-                        <Label Text=".NET MAUI multiplataforma" FontSize="16" />
-                    </HorizontalStackLayout>
+            <Label Text="Trabajamos con herramientas y tecnologías modernas como:"
+                   FontAttributes="Bold"
+                   FontSize="14"/>
 
-                    <HorizontalStackLayout>
-                        <Image Source="xaml_icon.png" WidthRequest="24" />
-                        <Label Text="XAML para interfaces modernas" FontSize="16" />
-                    </HorizontalStackLayout>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="• .NET MAUI para desarrollo multiplataforma (Android, iOS, Windows, macOS)" FontSize="14"/>
+                <Label Text="• C# como lenguaje principal" FontSize="14"/>
+                <Label Text="• XAML para diseño de interfaces responsivas" FontSize="14"/>
+                <Label Text="• SQL Server y SQLite para gestión de bases de datos" FontSize="14"/>
+                <Label Text="• Visual Studio 2022 como entorno de desarrollo" FontSize="14"/>
+                <Label Text="• Figma para el diseño de prototipos UI/UX" FontSize="14"/>
+                <Label Text="• Git y GitHub para control de versiones y trabajo colaborativo" FontSize="14"/>
+            </VerticalStackLayout>
 
-                    <HorizontalStackLayout>
-                        <Image Source="sql_icon.png" WidthRequest="24" />
-                        <Label Text="SQL Server y SQLite para bases de datos" FontSize="16" />
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Image Source="vs_icon.png" WidthRequest="24" />
-                        <Label Text="Visual Studio 2022 como entorno de desarrollo" FontSize="16" />
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Image Source="figma_icon.png" WidthRequest="24" />
-                        <Label Text="Diseño de prototipos con Figma" FontSize="16" />
-                    </HorizontalStackLayout>
-                </VerticalStackLayout>
-            </Frame>
+            <Label Text="Nuestro objetivo es entregar productos funcionales, intuitivos y sostenibles en el tiempo, alineados con las metas de cada cliente."
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"/>
         </VerticalStackLayout>
-    </ScrollView>
 </ContentPage>
