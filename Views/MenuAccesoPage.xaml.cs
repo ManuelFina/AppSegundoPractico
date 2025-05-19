@@ -14,7 +14,7 @@ public partial class MenuAccesoPage : ContentPage
               Navigation.PushAsync(new ServicioOfrecidoPage());
     }
 
-    private void OnDatosDesarrolladorClicked(object sender, EventArgs e)
+    private void OnAcercaClicked(object sender, EventArgs e)
     {
               Navigation.PushAsync(new AcercaDesarrolladorPage());
     }
