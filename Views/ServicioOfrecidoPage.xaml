@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSegundoPractico.Views.ServicioOfrecidoPage"
+             BackgroundColor="White">
+
+        <VerticalStackLayout Padding="20" Spacing="50">
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Image Source="icono_servicio.png" WidthRequest="24" HeightRequest="24"/>
+                <Label Text="Servicio Ofrecido"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <Label Text="Ofrecemos servicios de desarrollo personalizado de aplicaciones para empresas y particulares. Nuestras soluciones se adaptan a las necesidades específicas de cada cliente, garantizando la máxima calidad, eficiencia y escalabilidad."
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="Trabajamos con herramientas y tecnologías modernas como:"
+                   FontAttributes="Bold"
+                   FontSize="14"/>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="• .NET MAUI para desarrollo multiplataforma (Android, iOS, Windows, macOS)" FontSize="14"/>
+                <Label Text="• C# como lenguaje principal" FontSize="14"/>
+                <Label Text="• XAML para diseño de interfaces responsivas" FontSize="14"/>
+                <Label Text="• SQL Server y SQLite para gestión de bases de datos" FontSize="14"/>
+                <Label Text="• Visual Studio 2022 como entorno de desarrollo" FontSize="14"/>
+                <Label Text="• Figma para el diseño de prototipos UI/UX" FontSize="14"/>
+                <Label Text="• Git y GitHub para control de versiones y trabajo colaborativo" FontSize="14"/>
+            </VerticalStackLayout>
+
+            <Label Text="Nuestro objetivo es entregar productos funcionales, intuitivos y sostenibles en el tiempo, alineados con las metas de cada cliente."
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+</ContentPage>

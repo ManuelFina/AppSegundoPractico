@@ -5,11 +5,11 @@
              Title="Login"
              BackgroundColor="White">
 
-    <VerticalStackLayout Padding="30" Spacing="25">
+    <VerticalStackLayout Padding="30" Spacing="65">
 
  
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="8">
-            <Image Source="hand.png"
+            <Image Source="handblack.png"
                    WidthRequest="24"
                    HeightRequest="24"
                    VerticalOptions="Center"/>
@@ -35,56 +35,98 @@
                    HeightRequest="120" />
         </Frame>
 
-        <Frame BorderColor="#E0E0E0"
-               BackgroundColor="White"
-               CornerRadius="10"
-               HasShadow="False"
-               Padding="10">
-            <HorizontalStackLayout Spacing="10">
-                <Image Source="call.png"
-                       WidthRequest="20"
-                       HeightRequest="20"
-                       VerticalOptions="Center" />
-                <Entry x:Name="UsuarioEntry"
-                       Placeholder="Usuario o correo electrónico"
-                       PlaceholderColor="#9E9E9E"
-                       TextColor="Black"
-                       BackgroundColor="Transparent"
-                       FontSize="14"
-                       FontFamily="PoppinsBold" />
-            </HorizontalStackLayout>
-        </Frame>
+<Frame BorderColor="#E0E0E0"
+       BackgroundColor="White"
+       CornerRadius="10"
+       HasShadow="False"
+       Padding="10"
+       Margin="0,30,0,0"> 
+    <HorizontalStackLayout Spacing="10">
+        <Image Source="usergrey.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               VerticalOptions="Center" />
+        <Entry x:Name="UsuarioEntry"
+               Placeholder="Usuario o correo electrónico"
+               PlaceholderColor="#9E9E9E"
+               TextColor="Black"
+               BackgroundColor="Transparent"
+               FontSize="14"
+               FontFamily="PoppinsRegular" />
+    </HorizontalStackLayout>
+
+</Frame>
 
         <Frame BorderColor="#E0E0E0"
-               BackgroundColor="White"
-               CornerRadius="10"
-               HasShadow="False"
-               Padding="10">
-            <HorizontalStackLayout Spacing="10">
-                <Image Source="password.png"
-                       WidthRequest="20"
-                       HeightRequest="20"
-                       VerticalOptions="Center" />
+       BackgroundColor="White"
+       CornerRadius="10"
+       HasShadow="False"
+       Padding="10">
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="lockgrey.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               VerticalOptions="Center"
+               Grid.Column="0"/>
+
                 <Entry x:Name="PasswordEntry"
-                       Placeholder="Contraseña"
-                       IsPassword="True"
-                       PlaceholderColor="#9E9E9E"
-                       TextColor="Black"
-                       BackgroundColor="Transparent"
-                       FontSize="14"
-                       FontFamily="PoppinsBold"/>
-            </HorizontalStackLayout>
+               Placeholder="Contraseña"
+               IsPassword="True"
+               PlaceholderColor="#9E9E9E"
+               TextColor="Black"
+               BackgroundColor="Transparent"
+               FontSize="14"
+               FontFamily="PoppinsRegular"
+               Grid.Column="1"/>
+
+                <ImageButton x:Name="TogglePasswordButton"
+                     Source="visibilityoffgrey.png"
+                     BackgroundColor="Transparent"
+                     WidthRequest="24"
+                     HeightRequest="24"
+                     Clicked="OnTogglePasswordVisibility"
+                     Grid.Column="2"
+                     VerticalOptions="Center"/>
+            </Grid>
         </Frame>
 
-        <Button Text="Iniciar sesión"
-        BackgroundColor="#007BFF"
-        TextColor="White"
-        FontFamily="PoppinsBold"
-        CornerRadius="10"
-        HeightRequest="50"
-        FontSize="16"
-        Clicked="OnLoginClicked" />
+        <Frame BackgroundColor="#0E64D2"
+       CornerRadius="10"
+       HeightRequest="50"
+       Padding="0"
+       HasShadow="False">
 
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnLoginClicked" />
+            </Frame.GestureRecognizers>
 
+            <Grid Padding="15,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="loginwhite.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               VerticalOptions="Center"
+               Grid.Column="0"/>
+
+                <Label Text="Iniciar sesión"
+               FontFamily="PoppinsSemiBold"
+               FontSize="16"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               Grid.Column="1"/>
+            </Grid>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

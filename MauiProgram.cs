@@ -11,9 +11,11 @@ namespace AppSegundoPractico
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("Poppins-Bold.ttf", "PoppinsBold");
+                    fonts.AddFont("Poppins-Regular.ttf", "PoppinsRegular");
+                    fonts.AddFont("Poppins-SemiBold.ttf", "PoppinsSemiBold");
+                    fonts.AddFont("MaterialSymbolsRounded.ttf", "MaterialIcons");
+
                 });
 
 #if DEBUG

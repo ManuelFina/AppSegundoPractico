@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSegundoPractico.Views.AcercaDesarrolladorPage"
+             BackgroundColor="White">
+    <VerticalStackLayout>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="40">
+
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Image Source="userblack.png" WidthRequest="24" HeightRequest="24"/>
+                    <Label Text="Acerca del Desarrollador"
+                           TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                       FontFamily="PoppinsBold"/>
+                </HorizontalStackLayout>
+
+                <Frame HeightRequest="120"
+               WidthRequest="120"
+               CornerRadius="60"
+               Padding="0"
+               IsClippedToBounds="True"
+               BorderColor="LightGray"
+               HasShadow="False"
+               HorizontalOptions="Center">
+                    <Image Source="logo.png"
+                   Aspect="AspectFill"
+                   WidthRequest="120"
+                   HeightRequest="120" />
+                </Frame>
+
+                <Label Text="Manuel Fina, Desarrollador."
+                   FontAttributes="Bold"
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="PoppinsBold" TextColor="Black"/>
+
+                <Label Text="Estudiante de Desarrollo de Software con conocimientos en programación orientada a objetos, diseño de interfaces, bases de datos y desarrollo multiplataforma. Actualmente me encuentro perfeccionando mis habilidades en .NET MAUI, C# y herramientas de diseño como Figma."
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="PoppinsRegular" TextColor="Black"/>
+
+                <VerticalStackLayout Spacing="10">
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Image Source="mailblack.png" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Email: finamanuelmateo@gmail.com" FontSize="14" FontFamily="PoppinsSemiBold" TextColor="Black"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Image Source="callblack.png" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Cel: 2954-291626" FontSize="14" FontFamily="PoppinsSemiBold" TextColor="Black"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Image Source="linkblack.png" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="LinkedIn: www.linkedin.com/in/manuel-fina-" FontSize="14" FontFamily="PoppinsSemiBold" TextColor="Black"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Image Source="locationblack.png" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Ubicación: Toay, La Pampa." FontSize="14" FontFamily="PoppinsSemiBold" TextColor="Black"/>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
