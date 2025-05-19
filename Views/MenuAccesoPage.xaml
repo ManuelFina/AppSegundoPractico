@@ -4,67 +4,50 @@
              x:Class="AppSegundoPractico.Views.MenuAccesoPage"
              BackgroundColor="White">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="60" VerticalOptions="Center">
-            <Image Source="icono_usuario.png" WidthRequest="24" HeightRequest="24"/>
+
+    <VerticalStackLayout Padding="20" Spacing="200" >
+
+        <HorizontalStackLayout HorizontalOptions="Start" Spacing="10">
+            <Image Source="menublack.png" WidthRequest="24" HeightRequest="24" />
             <Label Text="Menu Principal"
-                       TextColor="Black"
-                       FontAttributes="Bold"
-                       FontSize="20"
-                       HorizontalOptions="Center"
-                       FontFamily="PoppinsBold"/>
+                   FontSize="20"
+                   FontFamily="PoppinsBold"
+                   TextColor="Black"
+                   VerticalOptions="Center"/>
+        </HorizontalStackLayout>
 
-            <Frame HasShadow="True" CornerRadius="10" Padding="10" BackgroundColor="#007AFF">
-                <HorizontalStackLayout Spacing="10">
-                    <Image Source="service_icon.png" 
-                           WidthRequest="24" 
-                           HeightRequest="24" 
-                           VerticalOptions="Center" />
-                    <Label Text="Servicio Ofrecido" 
-                           FontFamily="PoppinsRegular"
-                           VerticalOptions="Center"
-                           TextColor="White" />
-                    <Button Text="→"
-                            BackgroundColor="Transparent"
-                            TextColor="White"
-                            Clicked="OnServicioOfrecidoClicked" />
-                </HorizontalStackLayout>
-            </Frame>
+        <VerticalStackLayout Spacing="55">
 
-            <Frame HasShadow="True" CornerRadius="10" Padding="10" BackgroundColor="#007AFF">
-                <HorizontalStackLayout Spacing="10">
-                    <Image Source="info_icon.png" 
-                           WidthRequest="24" 
-                           HeightRequest="24" 
-                           VerticalOptions="Center" />
-                    <Label Text="Acerca del Desarrollador" 
-                           FontFamily="PoppinsRegular"
-                           VerticalOptions="Center"
-                           TextColor="White" />
-                    <Button Text="→"
-                            BackgroundColor="Transparent"
-                            TextColor="White"
-                            Clicked="OnDatosDesarrolladorClicked"/>
-                </HorizontalStackLayout>
-            </Frame>
+            <Button Text="Servicio Ofrecido"
+                    ImageSource="infowhite.png"
+                    ContentLayout="Left, 10"
+                    BackgroundColor="#0E64D2"
+                    TextColor="White"
+                    FontFamily="PoppinsSemiBold"
+                    CornerRadius="10"
+                    HeightRequest="45"
+                    Clicked="OnServicioOfrecidoClicked"/>
 
-            <Frame HasShadow="True" CornerRadius="10" Padding="10" BackgroundColor="#007AFF">
-                <HorizontalStackLayout Spacing="10">
-                    <Image Source="logout_icon.png" 
-                           WidthRequest="24" 
-                           HeightRequest="24" 
-                           VerticalOptions="Center" />
-                    <Label Text="Cerrar Sesión" 
-                           FontSize="16"
-                           VerticalOptions="Center"
-                           TextColor="White" />
-                    <Button Text="→"
-                            BackgroundColor="Transparent"
-                            TextColor="White"
-                            Clicked="OnCerrarSesionClicked"/>
-                </HorizontalStackLayout>
-            </Frame>
+            <Button Text="Acerca del desarrollador"
+                    ImageSource="userwhite.png"
+                    ContentLayout="Left, 10"
+                    BackgroundColor="#0E64D2"
+                    TextColor="White"
+                    FontFamily="PoppinsSemiBold"
+                    CornerRadius="10"
+                    HeightRequest="45"
+                    Clicked="OnAcercaClicked"/>
 
+            <Button Text="Cerrar Sesion"
+                    ImageSource="logoutwhite.png"
+                    ContentLayout="Left, 10"
+                    BackgroundColor="#0E64D2"
+                    TextColor="White"
+                    FontFamily="PoppinsSemiBold"
+                    CornerRadius="10"
+                    HeightRequest="45"
+                    Clicked="OnCerrarSesionClicked"/>
         </VerticalStackLayout>
-    </ScrollView>
+
+    </VerticalStackLayout>
 </ContentPage>

@@ -87,7 +87,7 @@
                Grid.Column="1"/>
 
                 <ImageButton x:Name="TogglePasswordButton"
-                     Source="visibilityoffgrey.png"
+                     Source="visibilitygrey.png"
                      BackgroundColor="Transparent"
                      WidthRequest="24"
                      HeightRequest="24"

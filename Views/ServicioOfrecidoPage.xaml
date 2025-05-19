@@ -7,7 +7,7 @@
         <VerticalStackLayout Padding="20" Spacing="50">
 
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                <Image Source="icono_servicio.png" WidthRequest="24" HeightRequest="24"/>
+                <Image Source="handymanblack.png" WidthRequest="24" HeightRequest="24"/>
                 <Label Text="Servicio Ofrecido"
                        FontAttributes="Bold"
                        FontSize="20"
